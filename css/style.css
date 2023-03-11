@@ -1,0 +1,496 @@
+* {
+  box-sizing: border-box;
+}
+
+*, a:focus {
+
+  outline: none !important;
+
+}
+
+html{
+ /* background-image: url(https://phonoteka.org/uploads/posts/2021-05/1620838711_4-phonoteka_org-p-fon-trend-5.jpg);  */
+  background-image: url(https://ewm.swiss/application/files/4915/8688/0364/6_UX_Design_Elements_to_Include_for_a_Powerful_Web_Design_-_EWM_SA_.jpg);
+  background-repeat:no-repeat;
+  background-size:cover;
+}
+
+body{
+    background-color: #F2F3F2;
+    font-family: 'Inter', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    width: 1450px;
+    display:contents;
+}
+
+.col-1 {
+  width: 200px; /* Можно задать любую другую ширину блока */
+  background-color: #07001cf0;
+  color:white;
+  height: 758px;
+}
+
+.col-2 {
+  height: 758px;
+  width: 870px; /* Можно задать любую другую ширину блока */
+  background-color: #0a0222f1;
+  color:white;
+}
+
+.col-3 {
+  height: 758px;
+  width: 466px; /* Можно задать любую другую ширину блока */
+  background-color: #07001cf0;
+  color:white;
+}
+
+.row {
+    display:inline-flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    align-content: center;
+    justify-content: space-between;
+}
+
+.user{
+  width: 264px;
+  padding-top: 40px;
+  padding-left: 1px;
+  padding-right: 9px;
+}
+
+.logo{
+text-align: center;
+padding-left: 14px;
+cursor: pointer;
+}
+
+.logo:hover{
+  opacity: 0.9;
+}
+
+.user ul{
+  padding-top: 60px;
+  font-family: 'Roboto';
+  font-weight: 800;
+  font-size: 15px;
+}
+
+.user ul li{
+  list-style-type: none;
+  padding-top: 25px;
+  text-align: left;
+}
+
+.user ul li a{
+  color: #a0a0a0;
+  text-decoration: none;
+}
+
+.user ul li:last-child{
+  margin-top: 260px;
+}
+
+.user ul li a:hover{
+  color: #ebfeff;
+  text-decoration: none;
+}
+
+/* .user, ul li a .linkactive{
+  color:rgb(255, 255, 255);
+  text-decoration: none;
+  font-weight: bold;
+} */
+
+.user ul li img{
+  width: 15px;
+  margin-right: 10px;
+  opacity: 0.5;
+}
+
+.user ul li img:hover{
+  opacity: 1;
+}
+
+/* dashboard */
+
+.dashboard{
+  padding-top: 26px;
+  width: 750px;
+  margin-left: 40px;
+}
+
+
+.head-dashboard{
+  display: flex;
+  justify-content: space-between;
+  box-sizing: border-box;
+}
+
+.btnmanage{
+  margin-top: 10px;
+  margin-right: 60px;
+  background: #1900b7;
+  color:white;
+  font-weight: 600;
+  width: 117px;
+  height: 43px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.btnmanage:hover{
+  background: rgb(0, 255, 191);
+  color:rgb(0, 1, 59);
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.accbalance{
+  font-size: 60px;
+  font-weight: normal;
+}
+
+.balance h1{
+  font-weight: normal;
+  cursor: pointer;
+}
+
+.balance h1:hover{
+  color: rgba(0, 255, 213, 0.776);
+}
+
+.dash-stat{
+  margin-top: 98px;
+  display: flex;
+  justify-content: space-between;
+  box-sizing: border-box;
+}
+
+.profit{
+  display: flex;
+}
+
+.profit p{
+  color: #909090;
+}
+
+.profit li{
+  list-style-type: none;;
+}
+
+.coll-1{
+  margin-right: 45px;
+}
+
+.coll-1:last-child {border-right: 0}
+
+.coll-2{
+  margin-right: 45px;
+}
+
+.cursors{
+  padding-top: 10px;
+  display: flex;
+  text-align: center;
+}
+
+.cursors img{
+  height: 42px;
+  cursor: pointer;
+}
+
+.cursors img:hover{
+opacity: 0.8;
+}
+
+.hr-line {
+	margin: 20px 0;
+	padding: 0;
+	height: 0;
+	border: none;
+	border-top: 1px solid #333;
+}
+
+/* график */
+
+.container h1 {
+  font-size: 1.5em;
+}
+
+.container h2 {
+  font-size: 1.25em;
+}
+
+.container h1, h2, p {
+  font-family: 'Red Hat Text', sans-serif;
+  color: #ffffff;
+}
+.container {
+  display: flex;
+  justify-content: center;
+}
+
+.cards {
+  width: 90%;
+  display: inline-flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+.btc, .cosmos, .ethereum {
+  display: grid;
+  max-width: 300px;
+  min-width: 250px;
+  grid-template-columns: 1fr;
+  grid-template-rows: minmax(50px, 60px) 1fr;
+  grid-template: "info" "chart";
+  border-radius: 30px;
+}
+.btc {
+  box-shadow: 10px 10px 20px 1px rgba(247, 147, 26, 0.15);
+  cursor: pointer;
+}
+
+.ethereum {
+  box-shadow: 10px 10px 20px 1px rgba(78, 56, 216, 0.15);
+  cursor: pointer;
+}
+.asset-info {
+  grid-area: info;
+  display: inline-flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 5% 0 5%;
+}
+.container .title {
+  display: inline-flex;
+}
+
+.container card h1 {
+  margin-left: 10px;
+}
+
+#btcChart, #cosmosChart, #ethereumChart {
+  grid-area: chart;
+  border-radius: 0px 0px 30px 30px;
+  margin-top: auto;
+}
+
+/* info.php */
+
+.info{
+  padding-top: 27px;
+  padding-left: 45px;
+  padding-right: 15px;
+}
+
+input[type="search"] {
+  width: 261px;
+  height: 43px;
+  border-radius:8px;
+  background: #190455;
+  border:1px;
+  border-color: rgba(255, 255, 255, 0.149);
+  color: white;
+  margin-right: 10px;
+  border-style: none;
+}
+
+input[type="search"]::placeholder{
+  color:white;
+  padding-left: 30px;
+}
+
+.search {
+  padding-top: 10px;
+  display: flex;
+  text-align: center;
+}
+
+.search img{
+  padding-top: 7px;
+  margin-right: 18px;
+}
+
+.convert{
+  margin-top: 45px;
+}
+
+.convertform{
+  margin-top: 40px;
+  text-align: center;
+  background-color: #00fff208;
+  height: 270px;
+  border-radius: 10px;
+}
+
+.firstcoin{
+  padding-top: 50px;
+}
+
+.nextcoin{
+  margin-top: 20px;
+}
+
+input[type="coin"] {
+  width: 250px;
+  height: 54px;
+  background: #3104ac;
+  border:1px;
+  border-color: rgba(255, 255, 255, 0.149);
+  border-bottom-left-radius: 8px;
+  border-top-left-radius: 8px;
+  color: white;
+}
+
+input[type="coin"]:hover{
+  color:rgba(255, 255, 255, 0.513);
+}
+
+
+
+select {
+  height: 54px;
+  width: 90px;
+  border-bottom-right-radius: 8px;
+  border-top-right-radius:  8px;
+  /*display:inline-flex*/
+  background: #0c0477;
+  border:1px;
+  border-color: rgba(255, 255, 255, 0.149);
+  color: white;
+  cursor: pointer;
+  text-align: center;
+}
+
+select:hover{
+  background: #080352;
+  color: rgb(255, 255, 255);
+} 
+
+
+input[type="coin"]::placeholder{
+  color:rgba(255, 255, 255, 0.6);
+}
+
+
+.convert button{
+  margin-top: 20px;
+  background-color: #0073ff;
+  color: white;
+  font-weight: bold;
+  text-align: center;
+  width: 140px;
+  height: 44px;
+  border-radius: 8px;
+  border-color:#1900b7;
+  cursor: pointer;
+  float: right;
+  margin-right: 25px;
+}
+
+.convert button:hover{
+  background-color: #4800ff;
+}
+
+.tradingview{
+  height: 400px;
+}
+
+.blockchain {
+  width: 350px;
+  text-align: center;
+}
+
+.imgava:hover{
+ opacity: 0.8;
+}
+
+/* модальное окно аватар */
+
+
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+
+.modal-content {
+  position: relative;
+  background-color: #0505c8;
+  margin: auto;
+  padding: 0;
+  border: 5px solid #000087;
+  width: 50%;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+  -webkit-animation-name: animatetop;
+  -webkit-animation-duration: 0.4s;
+  animation-name: animatetop;
+  animation-duration: 0.4s
+}
+
+
+@-webkit-keyframes animatetop {
+  from {top:-300px; opacity:0} 
+  to {top:0; opacity:1}
+}
+
+@keyframes animatetop {
+  from {top:-300px; opacity:0}
+  to {top:0; opacity:1}
+}
+
+
+.close {
+  color: white;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.modal-header {
+  padding: 2px 16px;
+  background-color: #000087;
+  color: white;
+}
+
+.modal-body {padding: 2px 16px 12px 16px;}
+
+.modal-body a{
+  text-decoration: none;
+  color: #00ddff;
+}
+
+.modal-footer {
+  padding: 2px 16px;
+  background-color: #000087;
+  color: white;
+}
+
+.modalava {
+  margin-top: 20px;
+  margin-left: 30px;
+}
+
+/* модальное окно аватар - конец */
